@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="fill_parent">
+    
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    <TextView
+        android:id="@+id/lb_url"
+        android:layout_width="73dp"
+        android:layout_height="wrap_content"
+        android:text="@string/lb_urlrus" />
+
+        <EditText
+	        android:id="@+id/in_url"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:ems="10"
+	        android:hint="@string/in_url"
+	        android:inputType="text"
+	        android:maxLength="100"
+	        android:text="@string/in_url" >
+		
+	        <requestFocus />
+	    </EditText>
+
+	    <CheckBox
+	        android:id="@+id/ch_mac"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/ch_macrus" />            
+            
+    <TextView
+        android:id="@+id/lb_per"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lb_perrus" />
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TableRow
+            android:id="@+id/tr_per"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/in_per"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/in_per"
+                android:inputType="number"
+                android:maxLength="3"
+                android:text="@string/in_per" />
+            <Spinner
+                android:id="@+id/sp_per"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:prompt="@string/sp_perrus" />
+
+        </TableRow>
+	</TableLayout>
+        
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+            
+        <TableRow
+            android:id="@+id/tr_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+		    <Button
+		        android:id="@+id/bt_run"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/bt_runrus" />
+
+		    <Button
+		        android:id="@+id/bt_stp"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/bt_stprus" />
+
+        </TableRow>
+        
+	</TableLayout>
+
+    <CheckBox
+        android:id="@+id/ch_log"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ch_logrus" />
+
+    <EditText
+        android:id="@+id/in_rsp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textMultiLine" />
+    <Button
+        android:id="@+id/btexit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btexitrus" />
+
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"> 
+<!-- 
+    <item android:id="@+id/mntool"
+          android:title="@string/mntoolrus" /> 
+ -->
+   
+    <item android:id="@+id/mnexit"
+          android:title="@string/mnexitrus" />  
+</menu>
